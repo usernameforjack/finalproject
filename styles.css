@@ -1,0 +1,28 @@
+.content {
+  background-image: url("https://usernameforjack.github.io/images/paper.jpg");
+    font-weight: bold;
+}
+
+.content p {
+  font-family:"Ariel", sans-serif;
+  color:black;
+}
+
+h1 {
+  font-family: serif;
+  color: white;
+  font-size: 300%;
+}
+
+p {
+  font-family: Times;
+}
+
+.footer {
+  background-image: url("https://usernameforjack.github.io/images/die-filmstrip.png");
+  background-size: 25%;
+  color: black;
+  text-align: right;
+  padding-right: 70px;
+  
+}
