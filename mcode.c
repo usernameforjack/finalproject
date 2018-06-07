@@ -7,7 +7,8 @@ char morse[26][5] = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---
 
 
 
-void main()
+char main(char argc, char* argv[])
+
 {
 
 for ( int i = 0; i < 26; i++)
@@ -29,7 +30,6 @@ for ( int i = 0; i < 26; i++)
 	}
 printf("high\n");
 
-char message[]  = "JACK";
 char encoded[100][100];
 
 
