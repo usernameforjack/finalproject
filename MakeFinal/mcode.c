@@ -7,28 +7,19 @@ char morse[26][5] = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---
 
 
 
-char main(char argc, char* argv[])
-
+int pagemorse(int argc, char* argv[])
 {
 
-for ( int i = 0; i < 26; i++)
-{
-	printf("%c\n", alpha[i]);
-}
+ if (argc != 2)
+  {
+    printf("%s : expected 1 message, please enter one message\n", argv[0]);
+    return 1;
+  }
 
 
-for ( int i = 0; i < 26; i++)
-        {
-                for (int j = 0; j < 5; j++)
-		{
-			printf("%c", morse[i][j]);
-        	}
+char message[strlen(argv[1])];
 
-		printf("\n");
-
-
-	}
-printf("high\n");
+strcpy(message, argv[1]);
 
 char encoded[100][100];
 
@@ -62,10 +53,13 @@ for (int j = 0; encoded[j][0] != 'e'; j++)
 {
 	for (int i = 0; i < 5; i++)
 	{
-	printf("%c",encoded[j][i]);
+		printf("%c",encoded[j][i]);
 	}
+	printf(" ");
 }
 
 
 
 }
+
+
